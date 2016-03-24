@@ -33,10 +33,11 @@ body {
 .typewriter {
   font-size: 30px;
   display: inline;
+  text-shadow: 2px 2px #5C5858;
 }
 
 hr {
-  border-color: #F05F40;
+  border-color: #48CCCD;
   border-width: 3px;
   max-width: 50px; }
 
@@ -53,6 +54,7 @@ a {
 
 h1 {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  text-shadow: 2px 2px #5C5858;
 }
 
 h2,
@@ -68,7 +70,7 @@ p {
   margin-bottom: 20px; }
 
 .bg-primary {
-  background-color: #F05F40; }
+  background-color: #48CCCD; }
 
 .bg-dark {
   background-color: #222;
