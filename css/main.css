@@ -30,6 +30,27 @@ body {
     100% { opacity:1; }
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
 .typewriter {
   font-size: 30px;
   display: inline;
@@ -50,7 +71,10 @@ body {
   margin-bottom: 20px;
 }
 
-
+.form-control:focus {
+  border-color: #F05F40;
+  box-shadow: inset 0 0.5px 0.5px #F05F40, 0 0 2px #F05F40;
+}
 
 hr {
   border-color: #48CCCD;
