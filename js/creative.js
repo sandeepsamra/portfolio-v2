@@ -5,6 +5,8 @@
  */
 $(document).ready(function(){
 
+// Typwriter Effect
+
   $(function(){
       $(".typewriter").typed({
         strings: ["Web Developer ^500"],
@@ -26,6 +28,31 @@ $(document).ready(function(){
     };
 
     $(window).bind('scroll', update);
+
+// Contact Form
+
+    var $contactForm = $('#contact-form');
+    var $contactContainer = $('#contact-container');
+    $contactForm.submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: '//formspree.io/ssamra67@gmail.com',
+            method: 'POST',
+            data: $(this).serialize(),
+            dataType: 'json',
+            beforeSend: function() {
+                $contactContainer.append('<div class="alert alert--loading">Sending message…</div>');
+            },
+            success: function(data) {
+                $contactContainer.find('.alert--loading').hide();
+                $contactContainer.append('<div class="alert alert--success">Message sent!</div>');
+            },
+            error: function(err) {
+                $contactContainer.find('.alert--loading').hide();
+                $contactContainer.append('<div class="alert alert--error">Oops, there was an error.</div>');
+            }
+        });
+    });
 
 });
 
