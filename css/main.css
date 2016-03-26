@@ -36,13 +36,29 @@ body {
   text-shadow: 2px 2px #5C5858;
 }
 
+.about-me {
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.me-pic {
+  height: 200px;
+  width: 215px;
+  border-radius: 100%;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+
 hr {
   border-color: #48CCCD;
   border-width: 3px;
   max-width: 50px; }
 
 hr.light {
-  border-color: white; }
+  border-color: white;  }
 
 a {
   -webkit-transition: all 0.35s;
@@ -208,10 +224,16 @@ header {
   .service-box p {
     margin-bottom: 0; }
 
+.img-responsive {
+  width: 650px;
+  height: 280px;
+}
+
 .portfolio-box {
   position: relative;
   display: block;
   max-width: 650px;
+  height: 280px;
   margin: 0 auto; }
   .portfolio-box .portfolio-box-caption {
     color: white;
