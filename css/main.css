@@ -188,8 +188,6 @@ aside {
             color: #F05F40; } }
 
 header {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
   width: 100%;
