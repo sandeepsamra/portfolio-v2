@@ -41,6 +41,8 @@ $(document).ready(function(){
             data: $(this).serialize(),
             dataType: 'json',
             beforeSend: function() {
+                $contactContainer.find('.alert--success').hide();
+                $contactContainer.find('.alert--error').hide();
                 $contactContainer.append('<div class="alert alert--loading">Sending message…</div>');
             },
             success: function(data) {
