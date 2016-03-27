@@ -5,7 +5,7 @@
  */
 $(document).ready(function(){
 
-// Typwriter Effect
+// Typwriter Effect on Header
 
   $(function(){
       $(".typewriter").typed({
@@ -29,7 +29,7 @@ $(document).ready(function(){
 
     $(window).bind('scroll', update);
 
-// Contact Form
+// Contact Form Submission
 
     var $contactForm = $('#contact-form');
     var $contactContainer = $('#contact-container');
