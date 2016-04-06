@@ -188,7 +188,7 @@ aside {
             color: #F05F40; } }
 
 header {
-  b/*ackground-attachment: fixed;*/
+  /*background-attachment: fixed;*/
   position: relative;
   width: 100%;
   min-height: auto;
