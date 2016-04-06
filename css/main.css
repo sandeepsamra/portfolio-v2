@@ -188,7 +188,7 @@ aside {
             color: #F05F40; } }
 
 header {
-  /*background-attachment: fixed;*/
+  /* parallax effect --> background-attachment: fixed;*/
   position: relative;
   width: 100%;
   min-height: auto;
